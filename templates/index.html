@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block content %}
+<a href="{{ url_for('create') }}">Generate New Image</a>
+<ul>
+    {% for id, filename in images %}
+    <li>
+        <img src="{{ url_for('static', filename='images/' + filename) }}" width="50">
+        <a href="{{ url_for('update', id=id) }}">Update</a>
+        <a href="{{ url_for('delete', id=id) }}">Delete</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
