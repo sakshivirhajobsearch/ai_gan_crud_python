@@ -19,7 +19,7 @@ No description provided.
 
 ## 🧠 Tech Stack Used
 
-- **Detected Technologies:** GAN, HTML, Python
+- **Detected Technologies:** Python, Flask, PyTorch
 - **GitHub Topics:** None
 
 ---
